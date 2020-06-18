@@ -77,19 +77,20 @@
 //         if(k>0) search(root.left,k);
 //     }
 // }
-// var nums=[2,1,2,2];
-// var majorityElement = function(nums) {
-//     let cnt=1,res=nums[0];
-//     for(let i=1;i<nums.length;i++){
-//         cnt+=(res==nums[i])?1:-1;
-//         if(cnt==0) {
-//             res=nums[i];
-//             cnt=1;
-//         }
-//     }
-//     return res;
-// };
-// console.log(majorityElement(nums))
+var nums = [2, 1, 2, 2];
+var majorityElement = function (nums) {
+    let cnt = 1,
+        res = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+        cnt += res == nums[i] ? 1 : -1;
+        if (cnt == 0) {
+            res = nums[i];
+            cnt = 1;
+        }
+    }
+    return res;
+};
+console.log(majorityElement(nums));
 // class CQueue {
 //     constructor() {
 //         this.stackA = [];
