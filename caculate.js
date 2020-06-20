@@ -34,8 +34,6 @@ for (let i = 0; i < data.length; i++) {
         delete arr[i];
     }
 }
-console.log("医务  人民群众  政府  企业 ");
-console.log(doctor.length, public.length, government.length, occupy.length);
 var filtered = arr.filter(function (el) {
     return el != null || el != undefined || el != "";
 });
